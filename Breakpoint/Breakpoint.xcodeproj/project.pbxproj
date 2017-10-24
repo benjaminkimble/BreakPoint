@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		402E45F71F9F500F00210C65 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402E45F61F9F500F00210C65 /* Constants.swift */; };
 		409486D61F9CDB7600EB1803 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409486D51F9CDB7600EB1803 /* AppDelegate.swift */; };
 		409486D81F9CDB7600EB1803 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409486D71F9CDB7600EB1803 /* FirstViewController.swift */; };
 		409486DA1F9CDB7600EB1803 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409486D91F9CDB7600EB1803 /* SecondViewController.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		402E45F61F9F500F00210C65 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		409486D21F9CDB7600EB1803 /* Breakpoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Breakpoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		409486D51F9CDB7600EB1803 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		409486D71F9CDB7600EB1803 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 		409486EC1F9CDBCC00EB1803 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				402E45F61F9F500F00210C65 /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				409486DA1F9CDB7600EB1803 /* SecondViewController.swift in Sources */,
 				409486F81F9E1E1200EB1803 /* LoginVC.swift in Sources */,
 				409486FA1F9E1E9A00EB1803 /* InsetTextField.swift in Sources */,
+				402E45F71F9F500F00210C65 /* Constants.swift in Sources */,
 				409486D61F9CDB7600EB1803 /* AppDelegate.swift in Sources */,
 				409486D81F9CDB7600EB1803 /* FirstViewController.swift in Sources */,
 				409486F01F9CDC2100EB1803 /* AuthService.swift in Sources */,
