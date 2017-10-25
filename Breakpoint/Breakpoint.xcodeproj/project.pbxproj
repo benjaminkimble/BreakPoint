@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4017980B1FA0B1330058839F /* CreatePostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4017980A1FA0B1330058839F /* CreatePostVC.swift */; };
+		4017980D1FA0B74B0058839F /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4017980C1FA0B74B0058839F /* UIViewExt.swift */; };
 		402E45F71F9F500F00210C65 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402E45F61F9F500F00210C65 /* Constants.swift */; };
 		402E45F91F9F662D00210C65 /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402E45F81F9F662D00210C65 /* MeVC.swift */; };
 		409486D61F9CDB7600EB1803 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409486D51F9CDB7600EB1803 /* AppDelegate.swift */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		4017980A1FA0B1330058839F /* CreatePostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostVC.swift; sourceTree = "<group>"; };
+		4017980C1FA0B74B0058839F /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		402E45F61F9F500F00210C65 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		402E45F81F9F662D00210C65 /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
 		409486D21F9CDB7600EB1803 /* Breakpoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Breakpoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +150,7 @@
 		409486EE1F9CDBE600EB1803 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				4017980C1FA0B74B0058839F /* UIViewExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4017980D1FA0B74B0058839F /* UIViewExt.swift in Sources */,
 				409486FC1F9E229E00EB1803 /* ShadowView.swift in Sources */,
 				409486F61F9E1E0200EB1803 /* AuthVC.swift in Sources */,
 				409486DA1F9CDB7600EB1803 /* GroupsVC.swift in Sources */,
