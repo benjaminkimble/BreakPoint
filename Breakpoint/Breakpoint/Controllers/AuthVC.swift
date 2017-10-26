@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class AuthVC: UIViewController {
 
@@ -32,6 +33,13 @@ class AuthVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if Auth.auth().currentUser != nil {
+            dismiss(animated: true, completion: nil)
+        }
     }
 
 }

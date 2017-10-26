@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class MeVC: UIViewController {
 
@@ -17,7 +18,19 @@ class MeVC: UIViewController {
     
     //@IBActions
     @IBAction func logoutBtnPressed(_ sender: Any) {
-    
+        let logoutPopup = UIAlertController(title: "Logout?", message: "Are you sure you want to log out?", preferredStyle: .actionSheet)
+        let logoutAction = UIAlertAction(title: "Logout?", style: .destructive) { (buttonTapped) in
+            do {
+                try Auth.auth().signOut()
+                let authVC = self.storyboard?.instantiateViewController(withIdentifier: AUTH_VC) as? AuthVC
+                self.present(authVC!, animated: true, completion: nil)
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+        
+        logoutPopup.addAction(logoutAction)
+        present(logoutPopup, animated: true, completion: nil)
     }
     
     //System Functions and Overrides
@@ -25,6 +38,11 @@ class MeVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.emailLbl.text = Auth.auth().currentUser?.email
     }
 
 }
