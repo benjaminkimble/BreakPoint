@@ -12,3 +12,5 @@ typealias CompletionHandlerBool = (_ status: Bool, _ error: Error?) -> ()
 
 let AUTH_VC = "AuthVC"
 let LOGIN_VC = "LoginVC"
+
+let FEED_CELL = "MessageFeedCell"
