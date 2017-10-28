@@ -15,3 +15,4 @@ let LOGIN_VC = "LoginVC"
 
 let FEED_CELL = "MessageFeedCell"
 let GROUP_CELL = "GroupCell"
+let USER_CELL = "UserCell"

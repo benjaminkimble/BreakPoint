@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4004ED311FA4ACC300E79C0D /* CreateGroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4004ED301FA4ACC300E79C0D /* CreateGroupsVC.swift */; };
+		4004ED331FA4B05700E79C0D /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4004ED321FA4B05700E79C0D /* UserCell.swift */; };
 		4017980B1FA0B1330058839F /* CreatePostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4017980A1FA0B1330058839F /* CreatePostVC.swift */; };
 		4017980D1FA0B74B0058839F /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4017980C1FA0B74B0058839F /* UIViewExt.swift */; };
 		402E45F71F9F500F00210C65 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402E45F61F9F500F00210C65 /* Constants.swift */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		4004ED301FA4ACC300E79C0D /* CreateGroupsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupsVC.swift; sourceTree = "<group>"; };
+		4004ED321FA4B05700E79C0D /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		4017980A1FA0B1330058839F /* CreatePostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostVC.swift; sourceTree = "<group>"; };
 		4017980C1FA0B74B0058839F /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		402E45F61F9F500F00210C65 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				409486F91F9E1E9A00EB1803 /* InsetTextField.swift */,
 				409486FB1F9E229E00EB1803 /* ShadowView.swift */,
 				40ED21001FA1F84F00481869 /* FeedCell.swift */,
+				4004ED321FA4B05700E79C0D /* UserCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				409486FC1F9E229E00EB1803 /* ShadowView.swift in Sources */,
 				409486F61F9E1E0200EB1803 /* AuthVC.swift in Sources */,
 				409486DA1F9CDB7600EB1803 /* GroupsVC.swift in Sources */,
+				4004ED331FA4B05700E79C0D /* UserCell.swift in Sources */,
 				409486F81F9E1E1200EB1803 /* LoginVC.swift in Sources */,
 				409486FA1F9E1E9A00EB1803 /* InsetTextField.swift in Sources */,
 				402E45F71F9F500F00210C65 /* Constants.swift in Sources */,
