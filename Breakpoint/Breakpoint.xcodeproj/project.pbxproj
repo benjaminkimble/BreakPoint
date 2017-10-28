@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4004ED311FA4ACC300E79C0D /* CreateGroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4004ED301FA4ACC300E79C0D /* CreateGroupsVC.swift */; };
 		4017980B1FA0B1330058839F /* CreatePostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4017980A1FA0B1330058839F /* CreatePostVC.swift */; };
 		4017980D1FA0B74B0058839F /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4017980C1FA0B74B0058839F /* UIViewExt.swift */; };
 		402E45F71F9F500F00210C65 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402E45F61F9F500F00210C65 /* Constants.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4004ED301FA4ACC300E79C0D /* CreateGroupsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupsVC.swift; sourceTree = "<group>"; };
 		4017980A1FA0B1330058839F /* CreatePostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostVC.swift; sourceTree = "<group>"; };
 		4017980C1FA0B74B0058839F /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		402E45F61F9F500F00210C65 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				409486F71F9E1E1200EB1803 /* LoginVC.swift */,
 				402E45F81F9F662D00210C65 /* MeVC.swift */,
 				4017980A1FA0B1330058839F /* CreatePostVC.swift */,
+				4004ED301FA4ACC300E79C0D /* CreateGroupsVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				402E45F91F9F662D00210C65 /* MeVC.swift in Sources */,
 				4017980B1FA0B1330058839F /* CreatePostVC.swift in Sources */,
 				409486D81F9CDB7600EB1803 /* FeedVC.swift in Sources */,
+				4004ED311FA4ACC300E79C0D /* CreateGroupsVC.swift in Sources */,
 				40ED21031FA1F99600481869 /* Message.swift in Sources */,
 				409486F01F9CDC2100EB1803 /* AuthService.swift in Sources */,
 				409486F21F9CDC2900EB1803 /* DataService.swift in Sources */,
