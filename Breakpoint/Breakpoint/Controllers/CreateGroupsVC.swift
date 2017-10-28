@@ -18,12 +18,28 @@ class CreateGroupsVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var groupMemberLbl: UILabel!
     
+    //Variables
+    var emailArray = [String]()
     
     //@IBActions
     @IBAction func doneBtnPressed(_ sender: Any) {
     }
     
     @IBAction func closeBtnPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    //My Functions
+    @objc func textFieldDidChange() {
+        if emailSearchTextField.text == "" {
+            emailArray = []
+            tableView.reloadData()
+        } else {
+            DataService.instance.getEmail(forSearchQuery: emailSearchTextField.text!, handler: { (returnedEmails) in
+                self.emailArray = returnedEmails
+                self.tableView.reloadData()
+            })
+        }
     }
     
     //System Functions and Overrides
@@ -32,6 +48,8 @@ class CreateGroupsVC: UIViewController {
 
         tableView.delegate = self
         tableView.dataSource = self
+        emailSearchTextField.delegate = self
+        emailSearchTextField.addTarget(self, action: #selector(CreateGroupsVC.textFieldDidChange), for: .editingChanged)
     }
 
 }
@@ -42,15 +60,19 @@ extension CreateGroupsVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return emailArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: USER_CELL) as? UserCell else { return UITableViewCell() }
         let profileImage = UIImage(named: "defaultProfileImage")
-        let email = "b@b.com"
+        let email = emailArray[indexPath.row]
         let isSelected = true
         cell.configureCell(profileImage: profileImage!, email: email, isSelected: isSelected)
         return cell
     }
+}
+
+extension CreateGroupsVC: UITextFieldDelegate {
+    
 }
