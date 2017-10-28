@@ -20,6 +20,7 @@ class CreateGroupsVC: UIViewController {
     
     //Variables
     var emailArray = [String]()
+    var chosenUserArray = [String]()
     
     //@IBActions
     @IBAction func doneBtnPressed(_ sender: Any) {
@@ -51,6 +52,11 @@ class CreateGroupsVC: UIViewController {
         emailSearchTextField.delegate = self
         emailSearchTextField.addTarget(self, action: #selector(CreateGroupsVC.textFieldDidChange), for: .editingChanged)
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        doneBtn.isHidden = true
+    }
 
 }
 
@@ -67,9 +73,27 @@ extension CreateGroupsVC: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: USER_CELL) as? UserCell else { return UITableViewCell() }
         let profileImage = UIImage(named: "defaultProfileImage")
         let email = emailArray[indexPath.row]
-        let isSelected = true
+        let isSelected = chosenUserArray.contains(email)
+        
         cell.configureCell(profileImage: profileImage!, email: email, isSelected: isSelected)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let cell = tableView.cellForRow(at: indexPath) as? UserCell else { return }
+        if !chosenUserArray.contains(cell.emailLbl.text!) {
+            chosenUserArray.append(cell.emailLbl.text!)
+            groupMemberLbl.text = chosenUserArray.joined(separator: ", ")
+            doneBtn.isHidden = false
+        } else {
+            chosenUserArray = chosenUserArray.filter({$0 != cell.emailLbl.text! })
+            if chosenUserArray.count > 0 {
+                groupMemberLbl.text = chosenUserArray.joined(separator: ", ")
+            } else {
+                groupMemberLbl.text = "ADD PEOPLE TO YOUR GROUP"
+                doneBtn.isHidden = true
+            }
+        }
     }
 }
 

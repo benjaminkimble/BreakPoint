@@ -44,6 +44,8 @@ class CreatePostVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        messageTextView.delegate = self
         self.emailLbl.text = Auth.auth().currentUser?.email
     }
 }
