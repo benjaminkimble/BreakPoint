@@ -28,7 +28,7 @@ class GroupsVC: UIViewController {
         super.viewDidAppear(animated)
         
         DataService.instance.REF_GROUPS.observe(.value) { snapshot in
-            DataService.instance.getAllGroups { (returnedGroups) in
+            DataService.instance.getAllGroups { returnedGroups in
                 self.groupsArray = returnedGroups
                 self.groupsTableView.reloadData()
             }
