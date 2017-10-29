@@ -651,7 +651,7 @@
         <!--Group FeedVC-->
         <scene sceneID="OMx-3V-Uuo">
             <objects>
-                <viewController id="IpF-tT-Sel" customClass="GroupFeedVC" customModule="Breakpoint" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GroupFeedVC" id="IpF-tT-Sel" customClass="GroupFeedVC" customModule="Breakpoint" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UPT-Eh-G2x">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -698,17 +698,17 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="F12-Jg-qLJ">
-                                                    <rect key="frame" x="18" y="18" width="50" height="50"/>
+                                                    <rect key="frame" x="0.0" y="18" width="50" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="NQe-71-txT"/>
                                                         <constraint firstAttribute="width" constant="50" id="XfH-Np-5Mn"/>
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="xEO-e5-Uau">
-                                                    <rect key="frame" x="78" y="17.999999999999996" width="318" height="63.666666666666657"/>
+                                                    <rect key="frame" x="0.0" y="17.999999999999996" width="0.0" height="63.666666666666657"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user@breakpoint.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q7O-fP-ff3">
-                                                            <rect key="frame" x="0.0" y="0.0" width="318" height="20"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="20"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="20" id="kqj-iC-yyl"/>
                                                             </constraints>
@@ -717,7 +717,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="L99-4Q-VFA">
-                                                            <rect key="frame" x="0.0" y="23.999999999999996" width="318" height="39.666666666666657"/>
+                                                            <rect key="frame" x="0.0" y="23.999999999999996" width="0.0" height="39.666666666666657"/>
                                                             <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
                                                             <color key="textColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -778,7 +778,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user@breakpoint.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="QeK-CZ-KBs">
-                                <rect key="frame" x="0.0" y="78" width="414" height="16.333333333333329"/>
+                                <rect key="frame" x="20" y="78" width="374" height="16.333333333333329"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
                                 <color key="textColor" red="0.56078431370000004" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -787,13 +787,13 @@
                         <color key="backgroundColor" red="0.25490196079999999" green="0.27058823529999998" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Hhb-Wj-Xde" firstAttribute="trailing" secondItem="tdh-r5-zNe" secondAttribute="trailing" id="Eyu-TH-NbZ"/>
-                            <constraint firstItem="tdh-r5-zNe" firstAttribute="trailing" secondItem="QeK-CZ-KBs" secondAttribute="trailing" id="Jyl-R2-wuw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QeK-CZ-KBs" secondAttribute="trailing" id="Jyl-R2-wuw"/>
                             <constraint firstItem="PMM-eT-bh4" firstAttribute="leading" secondItem="tdh-r5-zNe" secondAttribute="leading" id="LOz-sS-KuP"/>
                             <constraint firstItem="Hhb-Wj-Xde" firstAttribute="top" secondItem="QeK-CZ-KBs" secondAttribute="bottom" constant="8" id="Oli-4Z-Afr"/>
                             <constraint firstItem="Hhb-Wj-Xde" firstAttribute="leading" secondItem="tdh-r5-zNe" secondAttribute="leading" id="V8i-la-FA2"/>
                             <constraint firstItem="0ef-5H-pnE" firstAttribute="trailing" secondItem="tdh-r5-zNe" secondAttribute="trailing" id="YSi-Qw-Epp"/>
                             <constraint firstItem="tdh-r5-zNe" firstAttribute="bottom" secondItem="PMM-eT-bh4" secondAttribute="bottom" id="bOx-5X-4Pa"/>
-                            <constraint firstItem="QeK-CZ-KBs" firstAttribute="leading" secondItem="tdh-r5-zNe" secondAttribute="leading" id="dan-SB-9zC"/>
+                            <constraint firstItem="QeK-CZ-KBs" firstAttribute="leading" secondItem="UPT-Eh-G2x" secondAttribute="leadingMargin" id="dan-SB-9zC"/>
                             <constraint firstItem="QeK-CZ-KBs" firstAttribute="top" secondItem="0ef-5H-pnE" secondAttribute="bottom" constant="8" id="jKu-8i-Uho"/>
                             <constraint firstItem="tdh-r5-zNe" firstAttribute="bottom" secondItem="Hhb-Wj-Xde" secondAttribute="bottom" id="mRt-Ua-xVC"/>
                             <constraint firstItem="0ef-5H-pnE" firstAttribute="top" secondItem="UPT-Eh-G2x" secondAttribute="top" id="r3T-NO-oTz"/>

@@ -17,6 +17,7 @@ class GroupFeedVC: UIViewController {
     @IBOutlet weak var sendBtn: UIButton!
     @IBOutlet weak var sendBtnView: UIView!
     
+    var group: Group?
     
     @IBAction func backBtnPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
@@ -25,10 +26,23 @@ class GroupFeedVC: UIViewController {
     @IBAction func sendBtnPressed(_ sender: Any) {
     }
     
+    func initData(forGroup group: Group) {
+        self.group = group
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         sendBtnView.bindToKeyboard()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        groupTitleLbl.text = group?.title
+        guard let group = self.group else { membersLbl.text = ""; return }
+        DataService.instance.getEmails(forGroup: group) { returnedEmails in
+            self.membersLbl.text = returnedEmails.joined(separator: ", ")
+        }
     }
 
 }
