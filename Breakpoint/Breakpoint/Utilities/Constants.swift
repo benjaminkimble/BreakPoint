@@ -10,6 +10,7 @@ import Foundation
 
 typealias CompletionHandlerBool = (_ status: Bool, _ error: Error?) -> ()
 typealias CompletionHandlerStringArray = (_ returnedArray: [String]) -> ()
+typealias CompletionHandlerMessageArray = (_ returnedMessageArray: [Message]) -> ()
 
 let AUTH_VC = "AuthVC"
 let LOGIN_VC = "LoginVC"
