@@ -32,7 +32,10 @@
 
 <hr>
 
-<p>THIS IS WHERE THE SCREENS GO &lt; WUB WUB WUB WUB &gt;</p>
+<img src="./login.gif" width="350"/>
+<img src="./Add%20Group%20and%20Message.gif" width="350"/>
+<img src="./Create%20Feed%20And%20Message.gif" width="350"/>
+<img src="./logout.gif" width="350"/>
 
 <hr>
 
