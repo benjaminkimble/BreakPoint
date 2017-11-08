@@ -13,10 +13,7 @@ BreakPoint is a discussion feed client built and styled for coders.
 
 ---
 
-![Login](https://raw.githubusercontent.com/benjaminkimble/BreakPoint/master/login.gif)
-![AddFeedAndMessage](https://raw.githubusercontent.com/benjaminkimble/BreakPoint/master/Create%20Feed%20And%20Message.gif)
-![AddGroupAndMessage](https://raw.githubusercontent.com/benjaminkimble/BreakPoint/master/Add%20Group%20and%20Message.gif)
-![Logout](https://raw.githubusercontent.com/benjaminkimble/BreakPoint/master/logout.gif)
+THIS IS WHERE THE SCREENS GO < WUB WUB WUB WUB >
 
 ----
 
